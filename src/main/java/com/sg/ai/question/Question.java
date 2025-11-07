@@ -31,10 +31,12 @@ public class Question {
 	private String content;
 	
 	
-	private LocalDateTime creatdate;
+	private LocalDateTime createDate;
 	
 	@OneToMany(mappedBy = "question", cascade=CascadeType.REMOVE)
 	private List<Answer> answerList;
+
+	
 	
 	
 }
