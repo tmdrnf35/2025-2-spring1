@@ -16,15 +16,15 @@ class SbbApplicationTests {
 	private QuestionRepository questionRepository;
 
 	@Test
-	void textJpa() {
+	void testJpa() {
 		Question q1 = new Question();
-		q1.setSubject("sbb가 뭔가요?");
-		q1.setContent("오늘은 11월 7일입니다");
+		q1.setSubject("오늘이 며칠인가요?");
+		q1.setContent("오늘은 11월7일 목요일입니다");
 		q1.setCreateDate(LocalDateTime.now());
 		this.questionRepository.save(q1);
 		
 		Question q2 = new Question();
-		q2.setSubject("sbb가 뭔가요?");
+		q2.setSubject("오늘 날씨는 어떤가요");
 		q2.setContent("가을날씨처럼 화창해요");
 		q2.setCreateDate(LocalDateTime.now());
 		this.questionRepository.save(q2);
